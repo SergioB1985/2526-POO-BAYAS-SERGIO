@@ -1,0 +1,27 @@
+TEXTO COMPARATIVO DE LA PROGRAMACIÓN TRADICIONAL VS. PROGRAMACIÓN ORIENTADA A OBJETOS
+
+En el desarrollo de un software que calcula el promedio de las temperaturas de una semana, se pueden emplear diferentes
+paradigmas de programación, entre los más comunes se encuentran la programación tradicional basada en funciones y la
+programación orientada a objetos (POO). Ambos enfoques permiten resolver el problema, pero presentan diferencias
+importantes en su estructura, organización y escalabilidad.
+
+La programación tradicional, basada en funciones, se centra en la ejecución secuencial de instrucciones. En este
+enfoque, el programa se organiza mediante funciones independientes que realizan tareas específicas, como ingresar las
+temperaturas diarias y calcular el promedio semanal. Los datos suelen almacenarse en variables o estructuras simples
+(listas o arreglos) que son compartidas entre las funciones. Este tipo de programación es fácil de entender para
+principiantes, ya que su lógica es directa y clara. Sin embargo, a medida que el programa crece, puede resultar más
+difícil de mantener, ya que los datos y las funciones no están estrechamente vinculados.
+
+Por otro lado, la programación orientada a objetos (POO) organiza el software en torno a clases y objetos, lo que,
+permite agrupar los datos y los métodos que los manipulan en una sola entidad. En el caso del cálculo del promedio de
+temperaturas, se puede crear una clase que represente el clima semanal, donde las temperaturas sean atributos y el
+cálculo del promedio sea un método. Este enfoque favorece el encapsulamiento, ya que los datos están protegidos y solo
+se accede a ellos mediante métodos definidos. Además, la POO facilita la reutilización del código, la extensión del
+sistema y su mantenimiento a largo plazo.
+
+En conclusión, la programación tradicional es adecuada para programas pequeños y sencillos, como un cálculo básico del
+promedio semanal de temperaturas, mientras que la programación orientada a objetos resulta más apropiada para
+aplicaciones más complejas o escalables, donde se requiere una mejor organización, mantenimiento y reutilización del
+código.
+Ambos paradigmas cumplen el mismo objetivo, pero la elección depende del contexto y las necesidades del software
+a desarrollar.
