@@ -7,26 +7,26 @@ class Empleado:
     # Constructor de la clase Empleado
     def __init__(self, nombre, salario):
         self.nombre = nombre # Atributo público
-        self._salario = salario  # Atributo protegido (encapsulación)
+        self.__salario = salario  # Atributo protegido (encapsulación)
 
     # metodo getter que permite aceder al salario de un atributo protegido
     def get_salario(self):
-        return self._salario
+        return self.__salario
 
     # metodo Setter que permite modificar el salario de un atributo protegido, controla que el salario no sea negativo ni cero
     def set_salario(self, nuevo_salario):
         if nuevo_salario > 0:
-            self._salario = nuevo_salario
+            self.__salario = nuevo_salario
         else:
             print("Error: el salario debe ser mayor que cero")
 
     # Método polimórfico que se comporta diferente en la clase derivada, calcula el bono del empleado
     def calcular_bono(self):
-        return self._salario * 0.10
+        return self.__salario * 0.10
 
     def mostrar_informacion(self):
         print(f"Empleado: {self.nombre}")
-        print(f"Salario: {self._salario}")
+        print(f"Salario: {self.__salario}")
 
 
 # ==========================================
@@ -42,12 +42,12 @@ class Gerente(Empleado):
 
     # Sobrescritura del método (polimorfismo)
     def calcular_bono(self):
-        return self._salario * 0.20
+        return self.get_salario() * 0.20 # Metodo get que permite leer o acceder al atributo salario protegido
 
     def mostrar_informacion(self):
         print(f"Gerente: {self.nombre}")
         print(f"Departamento: {self.departamento}")
-        print(f"Salario: {self._salario}")
+        print(f"Salario: {self.get_salario()}") # imprime el salario usando el metodo get que permite acceder al atributo protegido
 
 
 # ==========================================
