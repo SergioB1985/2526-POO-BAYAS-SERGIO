@@ -1,0 +1,14 @@
+{
+    "001": {
+        "id": "001",
+        "nombre": "FIDEOS",
+        "cantidad": 50,
+        "precio": 0.5
+    },
+    "002": {
+        "id": "002",
+        "nombre": "ARROZ",
+        "cantidad": 200,
+        "precio": 78.0
+    }
+}
