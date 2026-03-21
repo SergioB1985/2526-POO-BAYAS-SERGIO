@@ -80,7 +80,7 @@ frame_entrada.pack(pady=10) # Empaquetar el frame con un margen vertical de 10 p
 
 # Fecha
 tk.Label(frame_entrada, text="Fecha:").grid(row=0, column=0, padx=5, pady=5) # Crear etiqueta para el campo de fecha y ubicarla en la primera fila y primera columna del grid con un margen de 5 píxeles
-entry_fecha = DateEntry(frame_entrada, date_pattern='yyyy-mm-dd') # Crear un DateEntry para seleccionar la fecha, con el formato de fecha "año-mes-día"
+entry_fecha = DateEntry(frame_entrada, date_pattern='Y-m-d') # Crear un DateEntry para seleccionar la fecha, con el formato de fecha "año-mes-día"
 entry_fecha.grid(row=0, column=1, padx=5, pady=5) # Ubicar el DateEntry en la primera fila y segunda columna del grid con un margen de 5 píxeles
 
 # Hora
@@ -104,6 +104,6 @@ btn_eliminar = tk.Button(frame_botones, text="Eliminar Evento Seleccionado", com
 btn_eliminar.grid(row=0, column=1, padx=10)
 
 btn_salir = tk.Button(frame_botones, text="Salir", command=ventana.quit) # Crear un botón para salir de la aplicación, con el texto "Salir"
-
+btn_salir.grid(row=0, column=2, padx=10)
 # Ejecutar app
 ventana.mainloop() # Iniciar el bucle principal de la aplicación para que la ventana se mantenga abierta y responda a las interacciones del usuario
